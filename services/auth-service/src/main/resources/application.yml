@@ -23,3 +23,8 @@ management:
     web:
       exposure:
         include: health,info
+
+security:
+  jwt:
+    secret: "THIS_IS_A_SUPER_SECRET_KEY_THAT_MUST_BE_AT_LEAST_64_CHARACTERS_LONG_1234567890"
+    accessTokenMinutes: 30
